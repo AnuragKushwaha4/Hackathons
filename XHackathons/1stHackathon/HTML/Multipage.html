@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h2 align="right">🏠Home</h2></a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+  <h2>HTML MEDIA</h2>
+  <h3>First Principle: The Web is More Than Text and Images</h3>
+  <p>The fundamental truth is that a webpage should be able to deliver any kind of content, not just static text and pictures. 
+  For years, this was a major problem. To play a video or audio file, browsers had to rely on third-party plugins like Adobe Flash, QuickTime, or Silverlight. 
+  This was inefficient, insecure, and inconsistent across different computers.</p>
+
+  <h3>The Core Problem</h3>
+  <p>How can we embed video and audio into a webpage in a <b>standardized, native, and plugin-free</b> way? 
+  We need a universal system that works on every modern browser, from a desktop PC to a mobile phone, without requiring the user to install anything extra.</p>
+
+  <h3>The Logical Solution: The HTML5 video and audio Tags</h3>
+  <p>The solution was to create dedicated HTML tags whose sole purpose is to embed and control media.</p>
+
+  <h3>Part 1: The Basics - Getting a Video on the Page</h3>
+  <p>The star of the show is the <code>&lt;video&gt;</code> tag. At its simplest, it just needs to know the source of the video file.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;video src="my-awesome-video.mp4"&gt;&lt;/video&gt;
+  </fieldset>
+
+  <p><b>The Problem:</b> If you put this on a page, you’ll just see the first frame of the video as a static image. 
+  You can’t play it, pause it, or change the volume.</p>
+
+  <h3>The controls Attribute: The Magic Switch</h3>
+  <p>The <code>controls</code> attribute is a boolean attribute. Its mere presence turns on the video player controls.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;video src="my-awesome-video.mp4" controls&gt;&lt;/video&gt;
+  </fieldset>
+
+  <h3>Part 2: Intermediate - Gaining More Control with Attributes</h3>
+  <ul>
+    <li><b>width and height</b>: Set the player’s dimensions.</li>
+    <li><b>autoplay</b>: Makes the video start automatically (usually requires <code>muted</code> too).</li>
+    <li><b>loop</b>: Makes the video restart when it finishes.</li>
+    <li><b>poster</b>: Sets an image thumbnail before the video plays.</li>
+  </ul>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;video src="video.mp4" width="640" height="360" controls&gt;&lt;/video&gt;
+  </fieldset>
+  <fieldset>
+    <legend><h5>Example with Autoplay</h5></legend>
+    &lt;video src="video.mp4" autoplay muted controls&gt;&lt;/video&gt;
+  </fieldset>
+  <fieldset>
+    <legend><h5>Example with Poster</h5></legend>
+    &lt;video src="video.mp4" poster="images/video-thumbnail.jpg" controls&gt;&lt;/video&gt;
+  </fieldset>
+
+  <h3>Part 3: The audio Tag</h3>
+  <p>The <code>&lt;audio&gt;</code> tag works almost the same as <code>&lt;video&gt;</code>, just without visuals.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;p&gt;Listen to our theme song:&lt;/p&gt;<br>
+    &lt;audio src="audio/theme-song.mp3" controls&gt;&lt;/audio&gt;
+  </fieldset>
+
+  <h3>Part 4: Advanced & Professional - Solving Real-World Problems</h3>
+  <h4>Problem #1: Not all browsers support the same video formats</h4>
+  <p>The solution is the <code>&lt;source&gt;</code> element. You can provide multiple formats inside the video tag.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;video controls poster="images/thumbnail.jpg"&gt;<br>
+    &nbsp;&nbsp;&lt;source src="videos/my-video.webm" type="video/webm"&gt;<br>
+    &nbsp;&nbsp;&lt;source src="videos/my-video.mp4" type="video/mp4"&gt;<br>
+    &nbsp;&nbsp;Sorry, your browser doesn’t support embedded videos.<br>
+    &lt;/video&gt;
+  </fieldset>
+
+  <h4>Problem #2: Accessibility (Captions & Subtitles)</h4>
+  <p>The <code>&lt;track&gt;</code> element allows subtitles and captions using WebVTT files.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;video controls&gt;<br>
+    &nbsp;&nbsp;&lt;source src="video.webm" type="video/webm"&gt;<br>
+    &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+    &nbsp;&nbsp;&lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;<br>
+    &nbsp;&nbsp;&lt;track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Español"&gt;<br>
+    &lt;/video&gt;
+  </fieldset>
+
+  <h3>The Two Ways to Create the Copyright Symbol ©</h3>
+  <p>You can use either the entity name <code>&amp;copy;</code> or the entity number <code>&amp;#169;</code>.</p>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;footer&gt;<br>
+    &nbsp;&nbsp;&lt;p&gt;Copyright &amp;copy; 2024 My Awesome Website. All Rights Reserved.&lt;/p&gt;<br>
+    &lt;/footer&gt;
+  </fieldset>
+
+  <fieldset>
+    <legend><h5>Example</h5></legend>
+    &lt;footer&gt;<br>
+    &nbsp;&nbsp;&lt;p&gt;Copyright &amp;#169; 2024 My Awesome Website. All Rights Reserved.&lt;/p&gt;<br>
+    &lt;/footer&gt;
+  </fieldset>
+
+  <h3>Other Common Symbol Entities</h3>
+  <ul>
+    <li>&amp;copy; → ©</li>
+    <li>&amp;reg; → ®</li>
+    <li>&amp;trade; → ™</li>
+    <li>&amp;lt; → &lt;</li>
+    <li>&amp;gt; → &gt;</li>
+    <li>&amp;amp; → &amp;</li>
+    <li>&amp;quot; → "</li>
+    <li>&amp;euro; → €</li>
+  </ul>
+
+  <h3>Multipage Website</h3>
+    <p>Break content into multiple pages (Home, About, Contact) and connect them using <code>&lt;a&gt;</code> links for navigation.</p>
+    <fieldset>
+        <legend>Example</legend>
+        &lt;a&gt;href="./FilePath.html">
+                    File Path Boiler Plate and Div in HTML 
+                &lt;/a&gt;
+                <br>
+                &lt;a&gt;href="./forms.html">
+                    Froms In HTML
+                &lt;/a&gt;
+    </fieldset>
+</main>
+
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</body>
+</html>

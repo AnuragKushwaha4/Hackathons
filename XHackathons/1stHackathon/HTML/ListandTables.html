@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <h2 align="right">🏠Home</h2>
+        </a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+        <h1>Nested List</h1>
+        <p>We Learned About List in HTML.. List are Elements of HTML that used to store data in Ordered and Unordered
+            way.</p>
+        <p>Now we will learn about Nested list.. Nested list is a list inside a list.</p>
+        <H3>Nested unordered list in Ordered list</H3>
+        <fieldset>
+            <legend>Example</legend>
+            <h4>States and their Famous cities</h4>
+            <ol>
+                <li>Maharastra
+                    <ul>
+                        <li>Mumbai</li>
+                        <li>Pune</li>
+                        <li>Navi Mumbai</li>
+                    </ul>
+                </li>
+                <li>Gujrat
+                    <ul>
+                        <li>Ahemdabad</li>
+                        <li>Gandhinagar</li>
+                        <li>Surat</li>
+                    </ul>
+                </li>
+            </ol>
+        </fieldset>
+        <h3>Syntax to create Upper list:</h3>
+        <fieldset>
+            <legend>Syntax</legend>
+            <pre>
+            &lt;ol&gt;
+             &lt;li&gt;Maharastra
+                &lt;ul&gt;
+                &lt;li&gt;Mumbai&lt;/li&gt;
+                &lt;li&gt;Pune&lt;/li&gt;
+                &lt;li&gt;Navi Mumbai&lt;/li&gt;
+                 &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Gujrat
+            &lt;ul&gt;
+                &lt;li&gt;Ahemdabad&lt;/li&gt;
+                &lt;li&gt;Gandhinagar&lt;/li&gt;
+                &lt;li&gt;Surat&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;/ol&gt;
+
+            </pre>
+        </fieldset>
+
+        <h3>Nested Ordered list in unordered list</h3>
+        <fieldset>
+            <legend>Example</legend>
+            <h4>States and their Famous cities</h4>
+            <ul>
+                <li>Maharastra
+                    <ol>
+                        <li>Mumbai</li>
+                        <li>Pune</li>
+                        <li>Navi Mumbai</li>
+                    </ol>
+                </li>
+                <li>Gujrat
+                    <ol>
+                        <li>Ahemdabad</li>
+                        <li>Gandhinagar</li>
+                        <li>Surat</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </fieldset>
+        <h3>Syntax to create Upper list:</h3>
+        <fieldset>
+            <legend>Syntax</legend>
+            <pre>
+                &lt;ul&gt;
+                &lt;li&gt;Maharastra
+                    &lt;ol&gt;
+                    &lt;li&gt;Mumbai&lt;/li&gt;
+                    &lt;li&gt;Pune&lt;/li&gt;
+                    &lt;li&gt;Navi Mumbai&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Gujrat
+                    &lt;ol&gt;
+                    &lt;li&gt;Ahemdabad&lt;/li&gt;
+                    &lt;li&gt;Gandhinagar&lt;/li&gt;
+                    &lt;li&gt;Surat&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;/ul&gt;
+</pre>
+
+        </fieldset>
+
+        <h1>Tables</h1>
+        <p>In HTML, a table is used to display data in rows and columns.</p>
+        <h3>Main Tags Used to Define a Table</h3>
+<ul>
+    <li><code>&lt;table&gt;</code> → Defines the table itself.</li>
+    <li><code>&lt;tr&gt;</code> → Table row (horizontal row of cells).</li>
+    <li><code>&lt;th&gt;</code> → Table header cell (bold & centered by default).</li>
+    <li><code>&lt;td&gt;</code> → Table data cell (normal data cell).</li>
+    <li><code>&lt;caption&gt;</code> → (Optional) Title of the table.</li>
+    <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> → (Optional) For structuring header, body, and footer rows.</li>
+</ul>
+<fieldset>
+    <legend>Example</legend>
+    <h3>Student Marks Table</h3>
+<table border="1">
+
+    <thead>
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Rahul</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Anjali</td>
+        <td>92</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Vikram</td>
+        <td>78</td>
+    </tr>
+    </tbody>
+</table>
+
+</fieldset>
+<fieldset>
+    <legend>Syntax</legend>
+
+    <h3>Student Marks Table</h3>
+<pre>
+&lt;table border="1"&gt;
+
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Roll No&lt;/th&gt;
+        &lt;th&gt;Name&lt;/th&gt; 
+        &lt;th&gt;Marks&lt;/th&gt; 
+    &lt;/tr&gt; 
+    &lt;/thead&gt; 
+
+    &lt;tbody&gt; 
+    &lt;tr&gt; 
+        &lt;td&gt;1&lt;/td&gt; 
+        &lt;td&gt;Rahul&lt;/td&gt; 
+        &lt;td&gt;85&lt;/td&gt; 
+    &lt;/tr&gt; 
+    &lt;tr&gt; 
+        &lt;td&gt;2&lt;/td&gt; 
+        &lt;td&gt;Anjali&lt;/td&gt; 
+        &lt;td&gt;92&lt;/td&gt; 
+    &lt;/tr&gt; 
+    &lt;tr&gt; 
+        &lt;td&gt;3&lt;/td&gt; 
+        &lt;td&gt;Vikram&lt;/td&gt; 
+        &lt;td&gt;78&lt;/td&gt; 
+    &lt;/tr&gt; 
+    &lt;/tbody&gt; 
+&lt;/table&gt; 
+</pre>
+</fieldset>
+<a href="./FilePath.html"><h2 align="right">Next Page ▶</h2></a>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</body>
+
+</html>

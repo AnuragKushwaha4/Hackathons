@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h2 align="right">🏠Home</h2></a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+    
+
+    <h2>File Path System</h2>
+
+    <h3>Step 1: The First Principle (The Fundamental Truth)</h3>
+    <p>The most fundamental truth is this: <strong>A website is not one single file.</strong></p>
+    <p>It's a collection of different files (HTML, CSS, JavaScript, images, videos, fonts) that all need to work together. These files are organized into folders, just like documents on your computer.</p>
+
+    <h3>Step 2: The Core Problem</h3>
+    <p>Now we have a core problem: If your <code>index.html</code> file needs to display an image named <code>logo.png</code>, how does the HTML file tell the browser where to <strong>find</strong> <code>logo.png</code>?</p>
+    <p>You can't just say <code>src="logo.png"</code> and expect it to work every time. What if the logo is in an <code>images</code> folder? What if it's on a completely different website?</p>
+    <p>The browser needs an exact, unambiguous address to locate the file. <strong>A file path is that address.</strong></p>
+
+    <h3>A) Relative File Paths (The Most Important for Your Projects)</h3>
+    <p>A relative file path gives directions to a file <strong>starting from the location of the file you are currently in</strong>. You will use this 99% of the time for linking your own files together (images, CSS, other HTML pages).</p>
+
+    <fieldset>
+        <pre>
+my-website/
+├── index.html
+├── about.html
+│
+├── images/
+│   ├── logo.png
+│   └── hero.jpg
+│
+└── pages/
+    ├── contact.html
+    └── terms.html
+    </pre>
+    </fieldset>
+
+    <h3>Scenario 1: Linking to a file in the SAME folder</h3>
+    <p>- Problem: You are in <code>index.html</code> and want to link to <code>about.html</code>.</p>
+    <fieldset>
+        <legend>Syntax</legend>
+        <pre>
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+    </pre>
+    </fieldset>
+
+    <h3>Scenario 2: Linking to a file in a SUB-FOLDER (Going Down)</h3>
+    <p>- Problem: You are in <code>index.html</code> and want to display <code>logo.png</code>.</p>
+    
+    <fieldset>
+        <legend>Syntax</legend>
+        <pre>
+&lt;img src="images/logo.png" alt="My Website Logo"&gt;
+    </pre>
+    </fieldset>
+
+    <h3>Scenario 3: Linking to a file in a PARENT FOLDER (Going Up)</h3>
+    <p>- Problem: You are in <code>contact.html</code> (inside <code>pages/</code>) and want to display <code>logo.png</code> (inside <code>images/</code>).</p>
+    <fieldset>
+        <legend>Syntax</legend>
+        <pre>
+&lt;img src="../images/logo.png" alt="My Website Logo"&gt;
+    </pre>
+    </fieldset>
+
+    <h3>B) Absolute File Paths</h3>
+    <p>An absolute file path gives the <strong>full, complete URL</strong> to a resource on the web. It starts with <code>http://</code> or <code>https://</code>.</p>
+    <p>- Use it for resources NOT on your own website (external links, fonts, images from other servers).</p>
+
+    <fieldset>
+        <legend>Syntax</legend>
+        <pre>
+&lt;a href="https://www.google.com"&gt;Search on Google&lt;/a&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Html5_logo_and_wordmark.svg" alt="HTML5 Logo"&gt;
+    </pre>
+    </fieldset>
+
+    <h3>The Critical "Why": Why not use absolute paths for your own files?</h3>
+    <p>Absolute paths like <code>src="C:/Users/Arjun/Desktop/my-website/images/logo.png"</code> only work on your computer. Once uploaded to a server, they break.</p>
+    <p>Browsers act as a <strong>"sandbox"</strong>, preventing code from accessing your computer’s file system directly.</p>
+
+    <h3>Summary / Rules of Thumb</h3>
+    <ul>
+        <li>For your own files: ALWAYS use Relative Paths.</li>
+        <li>For other websites' files: ALWAYS use Absolute Paths.</li>
+    </ul>
+
+    <h3>Absolute Path in Windows</h3>
+    <fieldset>
+        <p>Format: <code>Drive:\Folder\SubFolder\file.txt</code></p>
+    <p>Example: <code>C:\Users\JohnDoe\Documents\report.docx</code></p>
+    </fieldset>
+
+    <h3>Absolute Path in macOS/Linux</h3>
+    <p>Format: <code>/Folder/SubFolder/file.txt</code></p>
+    <p>Example: <code>/Users/johndoe/Documents/report.docx</code></p>
+
+    <h3>HTML Boilerplate Code</h3>
+    <p>The standard starting template ensures correct rendering, accessibility, and mobile responsiveness.</p>
+    <fieldset>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    </fieldset>
+
+    
+
+    <h3>1. The &lt;div&gt; (The Generic Box)</h3>
+    <p>Use <code>&lt;div&gt;</code> to group elements as a single unit:</p>
+    <fieldset>
+        <pre>
+&lt;div&gt;
+    &lt;img src="avatar.png"&gt;
+    &lt;h2&gt;Arjun Kumar&lt;/h2&gt;
+    &lt;p&gt;Loves to code and teach HTML.&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+    </fieldset>
+
+    <h3>2. class and id (Labels for the Box)</h3>
+    <fieldset>
+        <pre>
+&lt;div id="main-header"&gt;...&lt;/div&gt;
+&lt;div id="featured-profile" class="profile-card"&gt;...&lt;/div&gt;
+&lt;div class="profile-card"&gt;...&lt;/div&gt;
+&lt;div class="profile-card"&gt;...&lt;/div&gt;
+    </pre>
+    </fieldset>
+
+    <h3>3. The &lt;span&gt; (Inline Highlighter)</h3>
+    <p>Use <code>&lt;span&gt;</code> to highlight inline text without creating a new block:</p>
+   <fieldset>
+     <pre>
+&lt;p&gt;This is very &lt;span class="highlight"&gt;important&lt;/span&gt; information.&lt;/p&gt;
+    </pre>
+   </fieldset>
+
+    <h3>Other Semantic Boxes</h3>
+    <ul>
+        <li><code>&lt;header&gt;</code>: Top introductory content, logo, navigation.</li>
+        <li><code>&lt;footer&gt;</code>: Bottom closing content, copyright, contact info.</li>
+        <li><code>&lt;main&gt;</code>: The main, unique content of the page. Only one per page.</li>
+    </ul>
+    <a href="./forms.html"><h2 align="right">Next Page ▶</h2></a>
+</main>
+
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</body>
+</html>

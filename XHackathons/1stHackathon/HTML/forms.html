@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h2 align="right">🏠Home</h2></a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+    <h2>Forms in HTML</h2>
+    <p>In this module, we will learn about HTML Forms and how to collect user data effectively.</p>
+    <br>
+
+    <h3>The First Principle: The Web Needs to Be a Two-Way Street</h3>
+    <p>The fundamental truth is that a website isn't just a brochure for you to read. For the web to be useful, it needs a way to <strong>collect information <em>from</em> the user</strong> and send it back to the server.</p>
+    <p>Without this, you couldn't log in, search for a video, buy a product, post a comment, or send a message. The web would be a read-only library.</p>
+
+    <h3>The Core Problem</h3>
+    <p>How do we create a standardized, reliable system to:</p>
+    <ol>
+        <li><strong>Display</strong> interactive fields for a user to fill in (text boxes, checkboxes, dropdowns).</li>
+        <li><strong>Package</strong> the user's data neatly.</li>
+        <li><strong>Send</strong> that package to a specific destination on a server.</li>
+        <li><strong>Tell</strong> the server <em>how</em> the data is being sent.</li>
+    </ol>
+    <p>The logical solution is the HTML <strong>&lt;form&gt;</strong> tag.</p>
+
+    <h3>The &lt;input&gt; Element: The Box for Your Stuff</h3>
+    <p>This is the most common form tag. It's self-closing and creates an input field. Its behavior changes based on its <code>type</code> attribute.</p>
+    <p>Most basic type is <code>text</code>:</p>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <form>
+            <input type="text">
+        </form>
+    </fieldset>
+    <br>
+
+    <h3>The Need for Meaning - The &lt;label&gt;</h3>
+    <p><strong>Problem:</strong> We have a box, but the user doesn't know what to type.</p>
+    <p><strong>Solution:</strong> Use <strong>&lt;label&gt;</strong> to describe the input.</p>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label>First Name:</label>
+        <input type="text">
+    </fieldset>
+    <br>
+
+    <h3>The Need for Connection - id and for</h3>
+    <p><strong>Problem:</strong> How to link a label to a specific input for usability and accessibility.</p>
+    <p><strong>Solution:</strong> Use a unique <code>id</code> on the input and match it with the label's <code>for</code> attribute.</p>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName">
+    </fieldset>
+    <br>
+
+    <h3>The Need for Submission - &lt;form&gt; and submit</h3>
+    <p><strong>Solution:</strong> Wrap all inputs in a <code>&lt;form&gt;</code> tag and add a submit button.</p>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+            <br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName">
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+    <br>
+
+    <h3>The Need for "Select One" - Radio Buttons</h3>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label>T-Shirt Size:</label>
+        <br>
+        <input type="radio" id="sizeS" name="shirtSize" value="small">
+        <label for="sizeS">Small</label>
+        <br>
+        <input type="radio" id="sizeM" name="shirtSize" value="medium">
+        <label for="sizeM">Medium</label>
+        <br>
+        <input type="radio" id="sizeL" name="shirtSize" value="large">
+        <label for="sizeL">Large</label>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <h3>The Need for "Select Many" - Checkboxes</h3>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label>Pizza Toppings:</label>
+        <br>
+        <input type="checkbox" id="toppingPep" name="toppings" value="pepperoni">
+        <label for="toppingPep">Pepperoni</label>
+        <br>
+        <input type="checkbox" id="toppingMush" name="toppings" value="mushrooms">
+        <label for="toppingMush">Mushrooms</label>
+        <br>
+        <input type="checkbox" id="toppingOni" name="toppings" value="onions">
+        <label for="toppingOni">Onions</label>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <h3>A Better Button - The &lt;button&gt; Element</h3>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <form>
+            <!-- Old way -->
+            <input type="submit" value="Submit Your Order">
+            <br><br>
+            <!-- New way -->
+            <button type="submit">
+                <strong>Submit</strong> Your Order
+            </button>
+        </form>
+    </fieldset>
+    <br>
+
+    <h3>The Need for Long-Form Text - &lt;textarea&gt;</h3>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label for="comments">Any special instructions?</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <h3>The Need for Many Options - Dropdown (&lt;select&gt;)</h3>
+    <fieldset>
+        <legend><h3>Example</h3></legend>
+        <label for="country">Country:</label>
+        <br>
+        <select id="country" name="country">
+            <option value="">--Please choose an option--</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+        </select>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <h3>Specialized Inputs (HTML5)</h3>
+    <fieldset>
+        <legend><h3>type="password"</h3></legend>
+        <label for="userPass">Password:</label>
+        <br>
+        <input type="password" id="userPass" name="userPassword">
+        <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>type="number" with min and max</h3></legend>
+        <label for="userAge">Age (18-99):</label>
+        <br>
+        <input type="number" id="userAge" name="age" min="18" max="99">
+        <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>type="date"</h3></legend>
+        <label for="birthDate">Date of Birth:</label>
+        <br>
+        <input type="date" id="birthDate" name="dob">
+        <br><br>
+    </fieldset>
+    <a href="./Multipage.html"><h2 align="right">Next Page ▶</h2></a>
+</main>
+
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</body>
+</html>

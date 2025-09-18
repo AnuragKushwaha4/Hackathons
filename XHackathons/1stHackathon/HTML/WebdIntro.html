@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h2 align="right">🏠Home</h2></a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+    <h1>Web Development Course</h1>
+
+    <h2>HOW Does Internet Work</h2>
+
+    <h3>Principle 1: The Need to Share Information</h3>
+    <p>
+        The most fundamental truth is that we have information on one computer (Computer A) and we want it to be on another computer (Computer B). These computers are not in the same room.
+    </p>
+    <p>
+        How do we solve this? The simplest, most primitive way is to physically carry the information (e.g., on a USB stick). This works, but it's slow and doesn't scale. We need a direct, electronic connection.
+    </p>
+    <p>
+        So, we run a cable (like an ethernet cable or a fiber optic line) between Computer A and Computer B. We can now send electrical signals or pulses of light down this cable. We can agree on a simple code: a high-voltage signal means "1," and a low-voltage signal means "0."
+    </p>
+    <p>
+        We have just created the most basic form of a network: a <strong>direct link</strong>. We can now send bits (1s and 0s) between two computers.
+    </p>
+
+    <h3>Principle 2: The Problem of Scale</h3>
+    <p>
+        This works for two computers. But what if we have three computers (A, B, and C) and they all need to talk to each other? We would need a cable from A to B, from B to C, and from A to C. For four computers, we'd need six cables. For 100 computers, we'd need 4,950 cables.
+    </p>
+    <p>
+        The logical solution is to have a central device. Every computer connects to this one central point (let's call it a <strong>Switch</strong>). When Computer A wants to talk to Computer C, it sends the message to the switch, and the switch forwards it only to Computer C.
+    </p>
+    <p>
+        We have just invented a <strong>Local Network</strong>. A group of computers in close proximity (like an office or a home) can now communicate efficiently.
+    </p>
+
+    <h3>Principle 3: The Problem of Connecting Networks</h3>
+    <p>
+        Now, our office has a local network. Another office across town also has its own local network. How does a computer on our network talk to a computer on their network?
+    </p>
+    <p>
+        The logical solution is to connect the <em>networks themselves</em>. We need a special, dedicated computer that is connected to <em>our</em> network and also connected to <em>their</em> network. Its only job is to pass messages, or "route" traffic, from one network to the other. Let's call this device a <strong>Router</strong>.
+    </p>
+    <p>
+        Now, if we want to connect to a third network, we just connect our router to their router. Suddenly, we can build a massive, sprawling web by connecting networks to other networks.
+    </p>
+    <p>
+        This is the fundamental truth of the Internet. The <strong>Internet is a "network of networks."</strong> It is not one giant cloud; it is millions of private and public local networks all connected by these special routing devices.
+    </p>
+
+    <h3>Principle 4: The Problem of Finding Anyone (Addressing)</h3>
+    <p>
+        We have built a global web of interconnected networks. If I'm on my computer in my office, how do I send a message to a specific server in another country? There are millions of computers. I need a unique address for every single device.
+    </p>
+    <p>
+        This gives rise to the need for a universal addressing system. Just like the postal service needs a unique street address for every house in the world, our network of networks needs a unique address for every connected device.
+    </p>
+    <p>
+        This is the reason the <strong>IP Address (Internet Protocol Address)</strong> exists. When a router sees a message, it looks at the destination IP address and sends it one step closer to its final destination.
+    </p>
+
+    <h3>Principle 5: The Problem of Reliability and Fairness</h3>
+    <p>
+        If I want to send a large file, like a 1-hour video, it is a huge stream of data. Sending it all at once would monopolize the connection, and errors would ruin the entire file. The solution is to break the large file into many small, numbered <strong>Packets</strong>.
+    </p>
+    <p>
+        Each packet contains:
+    </p>
+    <ul>
+        <li>A small piece of the data (a "payload").</li>
+        <li>The destination IP address.</li>
+        <li>The sender's IP address.</li>
+        <li>A number, so the receiving computer knows the correct order.</li>
+    </ul>
+    <p>
+        These packets can travel independently and are reassembled by the receiving computer. This system of rules is called a <strong>Protocol</strong>, mainly <strong>TCP/IP</strong>.
+    </p>
+
+    <fieldset>
+        <legend><h4>Summary from First Principles</h4></legend>
+        <ol>
+            <li>Share data between two computers → <strong>Direct physical link</strong></li>
+            <li>Connect many computers efficiently → <strong>Local network with a switch</strong></li>
+            <li>Connect many networks efficiently → <strong>Internetwork connected by routers</strong></li>
+            <li>Find a specific computer → <strong>Universal IP Address</strong></li>
+            <li>Send data reliably → <strong>TCP/IP protocols with packets</strong></li>
+        </ol>
+    </fieldset>
+
+    <h3>IP Address</h3>
+    <p>An <strong>IPv4 Address</strong> is a 32-bit number, divided into four sections from 0 to 255. Example: 172.217.16.142</p>
+    <p>Due to limited addresses, we have <strong>Public IPs</strong> (globally unique) and <strong>Private IPs</strong> (local network only).</p>
+
+    <h3>IPv6</h3>
+    <p>IPv6 is a 128-bit address, using hexadecimal, to solve IPv4 exhaustion. Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</p>
+
+    <h3>MAC Address</h3>
+    <p>Every network device has a unique 48-bit <strong>MAC address</strong>. Formats include colon-separated, hyphen-separated, period-separated, or no separators.</p>
+    <h3>How to find MAC Address</h3>
+    <ol>
+        <h4>Steps: Windows</h4>
+        <li>Open Command Prompt</li>
+        <li>Run the Command:codeCode</li>
+        <fieldset>
+            <p>ipconfig /all</p>
+            <p>If you only want to see the MAC addresses without all the other details, you can use the getmac command.</p>
+            <p>getmac /v</p>
+        </fieldset>
+    </ol>
+    <ol>
+        <h4>Steps: MACos</h4>
+        <li>Open Terminal</li>
+        <li>Run the Command:codeCode</li>
+        <fieldset>
+            <p>ifconfig</p>
+        </fieldset>
+    </ol>
+
+    <h3>Port Number</h3>
+    <p>Port numbers (0-65535) identify specific services on a device:</p>
+    <ul>
+        <li>Well-Known Ports (0-1023): Standard services like HTTP (80), HTTPS (443).</li>
+        <li>Registered Ports (1024-49151): Application-specific services like 3000 for React/Node.</li>
+        <li>Dynamic/Private Ports (49152-65535): Temporary ports for client use.</li>
+    </ul>
+
+    <h3>DNS (Domain Name System)</h3>
+    <p>DNS translates human-friendly domain names into IP addresses. Steps include:</p>
+    <ol>
+        <li>Check local cache (Browser, OS, Router).</li>
+        <li>Query the Recursive Resolver (ISP or public server).</li>
+        <li>Resolver queries global hierarchy: Root → TLD → Authoritative server.</li>
+        <li>Resolver caches the result and returns IP to your computer.</li>
+        <li>Your browser connects to the server using IP and port.</li>
+    </ol>
+    <a href="./IntroHTML.html"><h2 align="right">Next Page ▶</h2></a>
+</main>
+
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</html>

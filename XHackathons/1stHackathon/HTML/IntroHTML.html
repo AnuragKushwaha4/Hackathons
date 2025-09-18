@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <h2 align="right">🏠Home</h2>
+        </a>
+        <h1>CODER ARMY</h1>
+        <pre>Be the Part of Our Army!.</pre>
+        <hr>
+    </header>
+    <main>
+        <h2>Introduction to HTML (Hyper Text Markup Language)</h2>
+        <p>In this module We will learn about Introduction of HTML and what are tags in HTML and some basic types of
+            tags</p>
+        <br>
+        <p>HTML stands for HyperText Markup Language. It is the standard language used to create and structure the
+            content of a webpage.</p>
+        <ul>
+            <li>HyperText: This refers to the ability to create links that connect web pages to one another, making the
+                web a connected "web" of information.</li>
+            <li>Markup Language: This means you use "tags" to surround your content, giving that content meaning and
+                structure. You are "marking up" a plain text document.</li>
+        </ul>
+        <fieldset>
+            <h3>Installation of VS Code</h3>
+            <p>VS Code, short for Visual Studio Code, is a free, lightweight, and powerful code editor made by
+                Microsoft. It’s widely used by developers for writing code in many programming languages.</p>
+
+            <a href="https://code.visualstudio.com/">Download VS code</a>
+        </fieldset>
+        <br>
+
+        <h3>Tags in HTML </h3>
+        <ol>
+            <li>
+                <h3>The heading Tag</h3>
+                <p>What it is: Headings are tags used to define titles and subtitles on your page. They are crucial for
+                    creating a logical hierarchy and outline for your content.</p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </fieldset>
+                <br>
+                <ul>
+                    <li>h1: The most important heading, typically used only once per page for the main title.</li>
+                    <li>h2: A major section heading.</li>
+                    <li>h3: A sub-section heading under an h2.</li>
+                    <li>...and so on, down to h6, the least important heading.</li>
+                </ul>
+                <p>The Purpose:To structure your document in a way that is understandable to both humans and machines
+                    (like search engines and screen readers). It is not just for making text big; it is for giving the
+                    text structural importance.</p>
+
+            </li>
+            <br>
+            <li>
+                <h3>The Paragraph</h3>
+                <p>
+                    What it is: The paragraph tag is the most common tag you'll use. It's for grouping sentences and
+                    blocks of text together.<br>
+                    The Purpose: To define a distinct paragraph of text. Browsers automatically add a little bit of
+                    space before and after a p  element, separating it from other content. You should not use multiple
+                    line breaks; you should use multiple p tags.
+                </p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    &lt;p&gt; This is the first paragraph. It contains several sentences about a topic.&lt;p&gt;
+                    <br>
+                    &lt;p&gt;This is a second, separate paragraph. The browser will display it with a space between it
+                    and the first one.&lt;p&gt;
+                </fieldset>
+            </li>
+
+            <br>
+            <li>
+                <h3>HTML Horizontal Rules</h3>
+                <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a
+                    horizontal rule.
+                    <br>
+                    The &lt;hr&gt;element is used to separate content (or define a change) in an HTML page:
+                </p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    &lt;p&gt;This is the first topic.&lt;p&gt;
+                    &lt;hr&gt;
+                    &lt;p&gt;This is a completely different topic&lt;p&gt;
+                </fieldset>
+            </li>
+            <br>
+            <li>
+                <h3>The Line Break Tag: </h3>
+                <p>This tag tells the browser, "Stop writing on this line and immediately start on the next one." It's
+                    like hitting the Enter key once in a poem or an address.
+                    <br>Purpose: Creates a single line break.
+                </p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    221B Baker Street&lt;br&gt;London, England&lt;p&gt;
+                </fieldset>
+
+            </li>
+            <br>
+
+            <li>
+                <h3> List Elements </h3>
+                <p>
+                    What it is: These tags are used to create lists. This is a perfect example of nesting.
+
+                    The Tags:
+
+                    &lt;ul&gt;: A Unordered List. It creates a bulleted list. <br>
+                    &lt;ol&gt;: An Ordered List. It creates a numbered list. <br>
+                    &lt;li&gt;: A List item. Each item in either type of list must be wrapped in an &lt;li&gt; tag. <br>
+
+                    The Purpose: To group related items together in a list format.
+
+                    Example (Nesting in action):
+
+                    The &lt;li&gt; elements are nested as children inside the&lt;ul&gt; parent.
+                </p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    &lt;ul&gt; <br>
+                    &lt;li&gt;Tea Bag&lt;/li&gt; <br>
+                    &lt;li&gt;Water&lt;/li&gt; <br>
+                    &lt;li&gt;Sugar&lt;/li&gt; <br>
+                    &lt;li&gt;Milk&lt;/li&gt; <br>
+                    &lt;/ul&gt; <br>
+
+                    &lt;ol&gt; <br>
+                    &lt;li&gt;First, boil the water in a kettle.&lt;/li&gt; <br>
+                    &lt;li&gt;Add tea bag, sugar and milk into it&lt;/li&gt; <br>
+                    &lt;li&gt;Keep boiling it for 5 minutes&lt;/li&gt; <br>
+                    &lt;li&gt;Serve the tea by pouring it into cup&lt;/li&gt; <br>
+                    &lt;/ol&gt; <br>
+                </fieldset>
+
+
+            </li>
+            <br>
+            <li>
+                <h3> The Anchor Tag</h3>
+                <p>What it is: The Anchor tag is what makes the web "hypertext." It is used to create a hyperlink to
+                    another webpage, a file, or a location within the same page.
+                    <br>
+                    The Tag: &lt;a&gt;
+                    <br>
+                    The Purpose: To make text (or an image) clickable, allowing users to navigate. It requires an
+                    attribute called href (hypertext reference) to specify the destination URL.
+                </p>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    &lt; a href="https://www.coderarmy.in/"&gt; Vist Coder Army&lt;/a&gt;
+                </fieldset>
+            </li>
+            <br>
+            <li>
+                <h3>Image Tag:</h3>
+                <p>What it is: The Image tag is a self-closing tag used to embed an image onto your page. <br>
+                    The Tag: &lt;img&gt; <br>
+                    The Purpose: To display a visual image. It requires two main attributes: <br>
+
+                    src (source): The path or URL to the image file. This is mandatory.
+                    <br> alt (alternative text): A description of the image. This is vital for accessibility (screen
+                    readers for the visually impaired will read this out) and for when the image fails to load.
+                </p>
+                <br>
+                <fieldset>
+                    <legend>
+                        <h5>Example</h5>
+                    </legend>
+                    &lt;img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" height="300px"
+                    width="300px" alt="This is Dog Photo"&gt;
+                </fieldset>
+            </li>
+        </ol>
+
+<a href="./ListandTables.html"><h2 align="right">Next Page ▶</h2></a>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+
+        <p>&copy; 2025 Your Coder Army. All rights reserved.</p>
+
+        <p>
+            Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a><br>
+            Phone: +91-98765XXXX
+        </p>
+
+        <p>
+            Follow us:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com/company">LinkedIn</a>
+        </p>
+
+
+        <p>Made with ❤️ using HTML</p>
+    </footer>
+</body>
+
+</html>
