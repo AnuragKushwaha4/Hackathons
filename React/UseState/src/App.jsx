@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
-    let count = 0;
+    const [count,setCount] = useState(0);
     function handleClick(){
-      let h1 = document.querySelector('h1')
-        count = count+1;
-        h1.textContent = `Counter: ${count}`
+      setCount(count+1);
     }
   return (
     <div>
