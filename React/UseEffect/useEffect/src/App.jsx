@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-  
+import Clock from '../Components/Clock';
+
+
+
 function App() {
 const [users,setUser]=useState([]);
 // render at every update of count:
@@ -32,14 +35,17 @@ const [count,setCount]=useState(30);
 
   return (
     <>
-      <h1>GITHUB</h1>
+      {/* <h1>GITHUB</h1>
      <input type="number" value={count} onChange={(e)=>{setCount(e.target.value)}} />
 
       {
         users.map(user=>(
           <img src={user.avatar_url} alt="" height={"100px"} width={"100px"} key={user.login}/>
         ))
-      }
+      } */}
+
+      <Clock/>
+      
 
     </>
   )
