@@ -1,1 +1,12 @@
 Today I learned Basics of React and how to initiate with React 
+1. what is React?
+React is a library used to create dynamic single page UI for web 
+application their are several advantages of using react over conventional HTML->CSS->JS
+
+Advantages:
+ 1.React give facilities to create component based UI that prevent unnecessary RE-rendering.
+ 2.It create a copy of actual DOM know as virtual DOM and manipulate over them to enhance speed and functionality.
+ 3.Prevent unnecessary re-rendering.
+ 4.Manage State
+ 5.Provide hooks.
+ 
