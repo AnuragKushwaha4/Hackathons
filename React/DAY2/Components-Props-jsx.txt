@@ -1,0 +1,22 @@
+In this session we understand about component props and jsx.
+
+What is Components?
+    Components are reusable code that return jsx UI and used to manage how the part of UI
+    looks and capable to manage state of vairable andmodify them.
+Components help you:
+Break UI into small pieces
+Reuse code
+Manage state easily
+Maintain large applications.
+
+
+What is Props?
+
+Props are read-only data passed from a parent component to a child component to share information 
+between components.
+
+
+what is JSX?
+
+It is Stands for Javascripts XML enable user to write HTML like code in javascripts
+making designing UI more easier.
