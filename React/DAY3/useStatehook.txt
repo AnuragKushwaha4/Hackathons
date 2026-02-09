@@ -1,0 +1,5 @@
+Hooks --> React provide various functionality to perform various task so hooks are the way to use 
+that functionality, it  provide built in functionality rather implementing manually.
+hooks increase code reusability and cleaniness.
+
+Use State hook-->useState is a React Hook that allows functional components to store and update state.
