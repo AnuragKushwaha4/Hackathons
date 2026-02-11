@@ -1,2 +1,5 @@
 Props are the ready only data that can shared from parent to children making data sharing convinient.
 but Props are not only useful for sharing data it can be used to sahre component functions etc.
+
+Now we can share data of various form though props---> normal data , in form of children and last we can share 
+functions also.
