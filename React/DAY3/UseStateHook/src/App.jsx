@@ -9,6 +9,8 @@ function App() {
   }
 
   return (
+
+    
     <>
       <Cards name="Counter1" count={count} handleClick={handleClick}> 
         <p>This is counter</p>
