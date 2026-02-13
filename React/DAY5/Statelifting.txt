@@ -1,1 +1,8 @@
 State Lifting...
+We all know that through props we can share data from parent component to child component
+along with data we can share function childrens etc it makes state management very easy but what if 
+we have to share data along sibling or from child to parent now here State shifting comes in 
+picture this concept help with solving above condition... for that we simple create all the states in
+parent and pass that state and function to manage that state as a prop to children so that eny changes 
+in child on the passed state will automatically reflect in parent and sibling also or simply We
+can say that we are doing state sinking.
