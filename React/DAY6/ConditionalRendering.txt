@@ -1,0 +1,8 @@
+Conditional rendering it is process of rendering or returning UI according to given condtions.
+Types: if else render a specific UI if the given condtion become true other wise render other UI.
+Early rendering in this for a specific condition if it true render one UI otherwise for all render 
+default UI.
+Logical rendering: in this type or rendering we just render according to logical condition like
+render page1 is condition1 is true is returned as: return<> {condition1 && <>page1</>} </>
+
+Last is Ternary rendering.
