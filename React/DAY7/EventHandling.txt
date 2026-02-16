@@ -1,0 +1,3 @@
+Event handling is Process of handling event occur in UI due to action of user
+Their are some concept in this that are very important :
+Preventing Bubbling effect and Preventing Default behaviour of the submit button.
