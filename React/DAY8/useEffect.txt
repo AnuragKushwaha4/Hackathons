@@ -1,1 +1,2 @@
 The useEffect hook is used to handle side effects in functional components.
+useEffect hook behave differentally depending on dependency list.
