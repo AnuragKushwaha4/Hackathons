@@ -1,0 +1,4 @@
+UseContext hook provide functionality to share state from parent to child directly without passing 
+props to each components independently .
+This hook reduce prop drilling .Propdrilling is a phenomena in which a intermediate child have to pass
+props without using that.
