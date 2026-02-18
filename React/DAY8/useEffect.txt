@@ -1,2 +1,9 @@
 The useEffect hook is used to handle side effects in functional components.
 useEffect hook behave differentally depending on dependency list.
+
+
+These hook can be used on the basic of the dependency. It is of four types:
+1. Hook triggers at each render in this we skip giving any dependency list.
+2. Hook triggers only one time which is when the page loaded for achiving this we provide empty dependency list.
+3.Hook triggers at first when page loads and when state in dependency list changes.
+3.Hook with clean up function. 
