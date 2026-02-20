@@ -14,17 +14,26 @@ function App() {
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<Home/>
+      element:<>
+      <NavBar/>
+      <Home/>
+      </>
     },{
       path:"/about",
-      element:<About/>
+      element:<>
+      <NavBar/>
+      <About/>
+      </>
     },{
       path:"/dashboard",
-      element:<Dashboard/>,
+      element:<>
+      <NavBar/>
+      <Dashboard/>
+      </>,
       children:[
         {
           path:"test",
-          element:<Test/>
+          element:<Tests/>
         },{
           path:"courses",
           element:<Courses/>
@@ -32,13 +41,20 @@ function App() {
       ]
     },{
       path:"*",
-      element:<ErrorHandler/>
+      element:<>
+      <ErrorHandler/>
+      </>
+    },
+    {
+      path:"/student/:id",
+      element:<>
+      <Params/></>
     }
   ])
   return (
     <>
-    <RouterProvider value={router}></RouterProvider>
-    <Navbar></Navbar>
+    <RouterProvider router={router} />
+    
     </>
   )
 }
