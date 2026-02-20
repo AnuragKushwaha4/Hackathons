@@ -1,0 +1,15 @@
+React is Library use to create a single page website and update UI dynamically and follow component 
+based architecture. Now to create multiple Route and handle these route react-router-dom is used
+this module provide functionality to create browser route and access them easily
+
+along with this React provide several ways to access these routes or to create a Navbar.
+In previous section to manage routing we used anchor tag but the major disadvantage with anchor tag 
+that is refreshes entire page to redirect at desired route so to prevent this we use Link tag or
+navlink Tag but for this functionality React also provide a hook named usenavigate help in 
+conviniently routing to different pages. 
+
+Along with all these React also provide a hook named useparam this hook help to access
+route parameters.
+
+Nested Routing is also a very important concept that allow to design route with multiple children component
+
