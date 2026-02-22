@@ -8,3 +8,7 @@ re-renders and impact performance.
 React Hook Form is a lightweight library that uses uncontrolled components 
 and refs internally. It minimizes re-renders and improves performance. It provides a
  useForm hook to handle form registration, validation, submission, and error handling efficiently.
+
+
+
+ Example: created a form with react hook form
