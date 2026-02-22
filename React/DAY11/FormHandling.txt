@@ -1,0 +1,10 @@
+In traditional React form handling, we use controlled components where each input field is 
+connected to state using useState. Every time the user types, the state updates and the 
+component re-renders.
+
+While this works fine for small forms, in large forms it may cause unnecessary 
+re-renders and impact performance.
+
+React Hook Form is a lightweight library that uses uncontrolled components 
+and refs internally. It minimizes re-renders and improves performance. It provides a
+ useForm hook to handle form registration, validation, submission, and error handling efficiently.
