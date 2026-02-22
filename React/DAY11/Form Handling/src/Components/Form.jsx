@@ -1,5 +1,7 @@
 import React from 'react'
 import {useForm} from "react-hook-form"
+
+import "./Form.css"
 const Form = () => {
 
     function Onsubmit(data){
@@ -32,7 +34,7 @@ const Form = () => {
             "email",{
                 required:true,
                 pattern:{
-                    value:"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$",
+                    value:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i,
                     message:"email format is not correct"
                 }
             }
@@ -48,7 +50,7 @@ const Form = () => {
             "password",
             {
                 pattern:{
-                    value:"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$",
+                    value:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
                     message:"Password must contain at least 8 characters, including uppercase, lowercase, number and special character"
                 }
             }

@@ -1,0 +1,113 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+form {
+  background: #181818;
+  padding: 40px;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated border effect */
+form::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #00f5ff, #ff00f7, #00f5ff);
+  z-index: -1;
+  border-radius: 22px;
+  filter: blur(20px);
+  animation: borderAnimation 6s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Labels */
+label {
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: white;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+/* Normal Focus Glow */
+input:focus {
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+/* Error Glow (Black glowing effect as you asked) */
+.errorlabel {
+  box-shadow: 0 0 15px black, 0 0 30px black;
+  background: #111;
+  border: 1px solid #000;
+}
+
+/* Error Message */
+.err-msg {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 8px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00f5ff, #ff00f7);
+  color: black;
+  transition: 0.4s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f5ff, 0 0 20px #ff00f7;
+}
+
+/* Disabled button */
+button:disabled {
+  background: grey;
+  cursor: not-allowed;
+  box-shadow: none;
+}
