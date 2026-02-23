@@ -1,0 +1,8 @@
+As we know their are two ways to store states first :default javascript just use const and let to store
+state but as you re render your ui all the data of the variable is lost and re initialize from the starting
+another one is useState in this it persist their value but at updatation it re render the ui.
+
+another way to store state along with get rid of these two problems is useRef.
+this hook return an object a you initialize.
+
+the main usecase of the useref hook that you can directly access and modify any element of the DOM.
