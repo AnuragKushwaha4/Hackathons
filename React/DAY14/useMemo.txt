@@ -1,0 +1,5 @@
+useMemo is a React Hook that memoizes (caches) the result of a caches 
+computation and only recomputes it when its dependencies change.
+
+It is used to optimize performance by preventing expensive calculations from 
+running on every render.
