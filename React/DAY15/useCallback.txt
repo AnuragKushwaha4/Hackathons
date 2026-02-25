@@ -3,4 +3,4 @@ re render of child component when a function in parent component passed as a  pr
 component re render the function defination is redefined so child component also re render.
 
 Another usecase of useCall back function is handleing expensive function as it freeze re creation of 
-function at
+function at re render.
