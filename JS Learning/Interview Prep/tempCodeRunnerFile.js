@@ -17,15 +17,9 @@ arr.forEach((element)=>{
 })
 
 let arr2 = arr.map((element)=>{
-    return element*2;
+    return arr/2;
 })
 console.log(arr2);
 let arr3 = arr.filter((element)=>element>10)
 console.log(arr3);
-
-array = [...arr,...arr2,...arr3]
-console.log(array);
-
-
-
 
