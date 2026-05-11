@@ -28,4 +28,8 @@ console.log(array);
 
 
 
-
+function good(){
+    console.log("hello");
+    
+}
+console.log(typeof good)
